@@ -1,0 +1,8 @@
+sources:
+  - name: staging
+    database: taxi_rides_ny 
+    schema: prod 
+    
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
