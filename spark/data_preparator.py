@@ -55,10 +55,10 @@ def download_file(args):
 
 
 @click.command()
-@click.option("--taxi", default=["yellow","green"], multiple=True, help="type of taxi")
+@click.option("--taxi", default=["yellow","green"], multiple=True, help="type of taxi (yellow and green by default)")
 @click.option("--start", default="2020-01-01", help="start of data")
-@click.option("--end", default="2020-03-01", help="start of data")
-@click.option("--dir", default="/tmp", help="dir for data")
+@click.option("--end", default="2020-03-01", help="end of data")
+@click.option("--dir", default="/tmp", help="dir for data (/tmp by default)")
 
 def main(taxi, start, end, dir):
     dates_list = create_dates_list(start, end)
@@ -68,3 +68,4 @@ def main(taxi, start, end, dir):
 
 if __name__ == "__main__":
     main()
+
