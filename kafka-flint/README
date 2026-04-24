@@ -1,0 +1,4 @@
+запустить кафку, послать сообщения и прочитать
+docker compose up redpanda -d
+uv run src/producers/producer.py
+uv run src/consumers/consumer.py
