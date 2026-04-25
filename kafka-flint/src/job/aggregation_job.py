@@ -81,4 +81,4 @@ def log_aggregation():
 
 
 if __name__ == '__main__':
-    log_aggregation()
+    log_aggregation()a
