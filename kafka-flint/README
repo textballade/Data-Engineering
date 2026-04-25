@@ -1,4 +1,13 @@
-запустить кафку, послать сообщения и прочитать
+
+запустить кафку:
 docker compose up redpanda -d
+отправить сообщения:
 uv run src/producers/producer.py
+прочитать сообщения:
 uv run src/consumers/consumer.py
+прочитать сообщения и записать в БД:
+docker compose up postgres -d
+uv run src/consumers/consumer_postgres.py
+
++ flink:
+docker compose up -d 
